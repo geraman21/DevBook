@@ -1,0 +1,41 @@
+{
+	"name": "mernproject",
+	"version": "1.0.0",
+	"description": "Dev Network",
+	"main": "server.js",
+	"scripts": {
+		"start": "node dist/server",
+		"server": "nodemon dist/server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "German",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"config": "^3.3.1",
+		"express": "^4.17.1",
+		"express-validator": "^6.4.0",
+		"gravatar": "^1.8.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.7",
+		"request": "^2.88.2",
+		"uuid": "^7.0.3"
+	},
+	"devDependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"@types/config": "0.0.36",
+		"@types/express": "^4.17.4",
+		"@types/gravatar": "^1.8.1",
+		"@types/jsonwebtoken": "^8.3.8",
+		"@types/mongodb": "^3.5.4",
+		"@types/mongoose": "^5.7.8",
+		"@types/node": "^13.11.0",
+		"@types/react-redux": "^7.1.7",
+		"@types/redux": "^3.6.0",
+		"@types/request": "^2.48.4",
+		"@types/uuid": "^7.0.2",
+		"concurrently": "^5.1.0",
+		"nodemon": "^2.0.2"
+	}
+}

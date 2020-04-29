@@ -1,0 +1,6 @@
+{
+	"jwtToken": "mySecretToken",
+	"mongoURI": "mongodb+srv://german21:german21@devconnector-mdpmd.mongodb.net/test?retryWrites=true&w=majority",
+	"githubClientId": "191f08cb8ad608b4b985",
+	"githubSecret": "e5715e166c4adc798972a58fc6839b9f8578ba33"
+}
