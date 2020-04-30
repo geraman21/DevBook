@@ -44,7 +44,7 @@ const Navbar: React.SFC<propsFromRedux> = (props) => {
 		<nav className="navbar bg-dark">
 			<h1 style={{ fontSize: '2em' } as CSSProperties}>
 				<Link to="/">
-					<i className="fas fa-code"></i> DevConnector
+					<i className="fas fa-code"></i> DevBook
 				</Link>
 			</h1>
 			{!props.auth.loading && (

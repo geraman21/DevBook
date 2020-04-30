@@ -32,7 +32,7 @@ exports.users_router.post('/', [
             res.status(400).json({ errors: [{ msg: 'User already exists' }] });
         }
         const avatar = gravatar_1.default.url(email, {
-            s: '200',
+            s: '100',
             r: 'pg',
             d: 'mm',
         });
