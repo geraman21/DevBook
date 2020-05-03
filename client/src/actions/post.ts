@@ -184,7 +184,7 @@ export const deleteComment = (
 	dispatch: ThunkDispatch<RootState, null, Action<string>>
 ) => {
 	try {
-		await Axios.post<PostDataModel>(`/api/posts/comment/${postId}/${commentId}`);
+		await Axios.delete<PostDataModel>(`/api/posts/comments/${postId}/${commentId}`);
 		dispatch({ type: Actions.REMOVE_COMMENT, payload: commentId });
 		dispatch(setAlert('Comment Deleted', 'success'));
 	} catch (error) {
